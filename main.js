@@ -1,22 +1,25 @@
 addEventListener("DOMContentLoaded",()=>{
-    // Calcular el valor total del valor de 5 productos, el IVA y el subtotal, visualizar los resultados de:
-    // Iva, Subtotal y Total de la compra de los artículos.
-let pago1 =Number(prompt("ingrese el pago hecho"))
-let pago2 =Number(prompt("ingrese el pago hecho"))
-let pago3 =Number(prompt("ingrese el pago hecho"))
-let pago4 =Number(prompt("ingrese el pago hecho"))
-let pago5 =Number(prompt("ingrese el pago hecho"))
+    // Programa para solicitar el nombre, apellido, edad y la nota promedio de 5 estudiantes de un curso
+    // de computación.
+    let nombre =(prompt("ingrese su nombre"))
+    let apellido =(prompt("ingrese su apellido"))
+    let edad =(prompt("ingrese su edad"))
+    let nota1 =Number(prompt("ingrese su nota 1"))
+    let nota2 =Number(prompt("ingrese su nota 2"))
+    let nota3 =Number(prompt("ingrese su nota 3"))
+    let nota4 =Number(prompt("ingrese su nota 4"))
+    let nota5 =Number(prompt("ingrese su nota 5"))
 
-let total = pago1 + pago2 + pago3 + pago4 + pago5
-let iva = total * 0.19
-let totalMasIva = total + iva
-if(totalMasIva > 0){
-    console.log(`valor del iva es de ${iva}`)
-    console.log(` el subtotal de la compra es de ${ total}`)
-    console.log(` el total de la compra es de ${ totalMasIva}`)
-}else{
-    console.log(`el resultado es menor que cero`)
-}
+    let total = nota1 + nota2 + nota3 + nota4 + nota5
+    let iva = total / 5
+    
+    console.log(` señor /ra ${ nombre}`)
+    console.log(` su promedio es ${iva}`)
+    if(iva < 5){console.log(` usted tienen un promedio bajo`)}
+    
+    else if(iva > 5 && iva < 8){console.log(` usted tienen un promedio alto`)}
+    
+    else{console.log(`usted tienen un promedio superior `)}
 
 
 })
