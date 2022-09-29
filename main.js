@@ -1,14 +1,28 @@
 addEventListener("DOMContentLoaded",()=>{
-    // Restarle al primer número al segundo (siempre y cuando el primero sea mayor que él segundo, en
-    //     caso contrario indicar con un mensaje que la operación no es posible realizarla.
-    let nota1 =Number(prompt("ingrese su nota 1"))
-    let nota2 =Number(prompt("ingrese su nota 2"))
+//     En una tienda de HELADO da un descuento por compra a sus clientes con membresía dependiendo
+// de su tipo, sólo existen tres tipos de membresía, tipo A, tipo B y tipo C.
+// Los descuentos son los siguientes:
+// Tipo A 10% de descuento
+// Tipo B 15% de descuento
+// Tipo C 20% de descuento
 
-    if(nota1 > nota2){
-        let total = nota1 - nota2
-        console.log(` la resta es ${ total}`)
+    let valor =Number(prompt("ingrese el valor del helado"))
+    let cat = prompt("ingrese el valor de menbresia\n tipo A, tipo B y tipo C")
+    
+    if(cat == "a" || cat == "A"){
+        let descuento = valor * 0.10
+        let total = descuento - valor
+        console.log(` valor a pagar ${ total}`)
     }
-    else{console.log(`la operación no es posible realizarla`)}
-
+    else if (cat == "b" || cat == "B"){
+        let descuento = valor * 0.15
+        let total = descuento - valor
+        console.log(` valor a pagar ${ total}`)
+    }
+    else{
+        let descuento = valor * 0.20
+        let total = descuento - valor
+        console.log(` valor a pagar ${ total}`)
+    }
 
 })
